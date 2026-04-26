@@ -1,0 +1,16 @@
+menu "Claude Buddy"
+
+config CLAUDE_BUDDY_BRAND_NAME
+    string "Advertised name prefix"
+    default "Claude"
+    help
+        Must start with "Claude" so the desktop's device picker can
+        filter to it. The firmware appends the last two BT MAC bytes
+        as suffix (e.g. "Claude-A1B2").
+
+config CLAUDE_BUDDY_DEFAULT_BRIGHTNESS
+    int "Default LCD backlight duty (0..100)"
+    range 5 100
+    default 35
+
+endmenu

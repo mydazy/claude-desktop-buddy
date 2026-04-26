@@ -2,3 +2,11 @@
 .vscode/
 .DS_Store
 data/
+
+# ESP-IDF (mydazy-p30-4g/)
+build/
+managed_components/
+sdkconfig
+sdkconfig.old
+dependencies.lock
+.idea/

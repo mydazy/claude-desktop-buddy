@@ -1,0 +1,22 @@
+idf_component_register(
+    SRCS
+        "main.cc"
+        "power.cc"
+        "display.cc"
+        "ble_nus.cc"
+        "data.cc"
+        "input.cc"
+        "touch.cc"
+    INCLUDE_DIRS "."
+    REQUIRES
+        driver
+        esp_driver_gpio
+        esp_driver_spi
+        esp_driver_ledc
+        esp_driver_i2c
+        esp_lcd
+        esp_timer
+        nvs_flash
+        json
+        bt
+)

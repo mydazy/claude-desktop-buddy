@@ -1,0 +1,19 @@
+## IDF Component Manager Manifest
+##
+## Vendor drivers come from the Espressif Component Registry. The mydazy/*
+## drivers are open-source pure-C handles published with semver — see
+## xiaozhi-esp32/main/boards/mydazy-p30-4g/README.md §10.
+dependencies:
+  idf:
+    version: ">=5.5"
+  espressif/button:
+    version: "^4.0.0"
+  espressif/esp_lvgl_port:
+    version: "^2.5.0"
+  lvgl/lvgl:
+    version: "~9.2.2"
+    public: true
+  mydazy/esp_lcd_jd9853:
+    version: "^2.0.0"
+  mydazy/esp_lcd_touch_axs5106l:
+    version: "^2.0.0"
